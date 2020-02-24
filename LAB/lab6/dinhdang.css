@@ -1,0 +1,54 @@
+#background1{
+	background:url(images/bg.jpg);
+	margin: auto;
+    height: auto;
+    width: 1000px;
+    overflow:auto
+	}
+#background2{
+	background:#FFF;
+	width:auto;
+	height:auto;
+	margin:20px;
+	}
+#bgweb{
+	width:auto;
+	height:auto;
+	padding:10px;
+	}
+#banner{
+	background:url(images/header.jpg);
+	height:240px;
+	}
+#menu{
+	display: flex;
+    justify-content: space-between;
+    padding:5px;
+    flex-flow: row wrap;
+	background:#212226;
+	height:51px;
+	}
+.ddmenu{
+	color:#FFF;
+	padding:10px;
+	margin-right:0px;
+	font-size:12px;
+	}
+a:hover{
+	color:#00C6FF;
+	}
+a{
+	color:#FFF;
+	}
+.menuleft{
+	width:200px;
+	height:40px;
+	color:#FFF;
+	background:url(images/menu_bg.jpg);
+	padding-left:10px;
+	margin-top:3px;
+	}
+.menuleft:hover{
+	background: #00C6FF;
+	}
+	

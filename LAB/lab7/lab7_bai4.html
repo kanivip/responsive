@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<script language="javascript" src="scripts/lab7_bai5.js"></script>
+</head>
+
+<body>
+<div>
+<img src="images/layout/banner1.jpg" id="hinhanh" onmouseover="dung()" onmouseout="chay()"/>
+</div>
+<div style="margin-left:80px" id="hinh_banner" on>
+<button type="button" onclick="next()">Hình trước</button>
+<button type="button" onclick="h1()">Hình 1</button>
+<button type="button" onclick="h2()">Hình 2</button>
+<button type="button" onclick="h3()">Hình 3</button>
+<button type="button" onclick="prev()">Hình sau</button>
+</div>
+<script>
+	var img = [
+		"images/layout/banner1.jpg",
+		"images/layout/banner2.jpg",
+		"images/layout/banner3.jpg"
+			];
+	var dem=0;
+	function next(){
+			var hinhanh=document.getElementById("hinhanh");
+			dem++;
+			if(dem >=img.length){
+				dem =0;
+				}
+			hinhanh.src = img[dem];
+		}
+	function prev(){
+			var hinhanh=document.getElementById("hinhanh");
+			if(dem ==0){
+				dem =3;
+				}
+			dem--;
+			hinhanh.src = img[dem]; 
+		}
+	function h1(){
+			document.getElementById("hinhanh").src = "images/layout/banner1.jpg";
+		}
+	function h2(){
+			document.getElementById("hinhanh").src = "images/layout/banner2.jpg";
+		}
+	function h3(){
+			document.getElementById("hinhanh").src = "images/layout/banner3.jpg";
+		}
+	chay();
+</script>
+</body>
+</html>
